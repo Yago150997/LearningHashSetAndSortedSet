@@ -1,0 +1,14 @@
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\bin\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.exe
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\bin\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.deps.json
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\bin\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.runtimeconfig.json
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\bin\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.runtimeconfig.dev.json
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\bin\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.dll
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\bin\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.pdb
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\obj\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.csproj.AssemblyReference.cache
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\obj\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\obj\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.AssemblyInfoInputs.cache
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\obj\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.AssemblyInfo.cs
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\obj\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.csproj.CoreCompileInputs.cache
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\obj\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.dll
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\obj\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.pdb
+C:\Users\yagog\Downloads\Pessoal\C#\Programas\Capitulo 15\LearningHashSetAndSortedSet\LearningHashSetAndSortedSet\obj\Debug\netcoreapp3.1\LearningHashSetAndSortedSet.genruntimeconfig.cache
