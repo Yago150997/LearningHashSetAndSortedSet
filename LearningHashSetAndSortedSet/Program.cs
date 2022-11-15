@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.IO;
+using LearningHashSetAndSortedSet.Entities;
 
 namespace LearningHashSetAndSortedSet
 {
@@ -15,27 +16,31 @@ namespace LearningHashSetAndSortedSet
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter file full path");
+            HashSet<LogRecord> Set = new HashSet<LogRecord>();
+
+            Console.Write("Enter file full path: ");
             string Path = Console.ReadLine();
 
             try
             {
                 using (StreamReader sr = File.OpenText(Path))
                 {
-
-
                     while (!sr.EndOfStream)
                     {
-                        string Archive = sr.ReadLine();
-                        Console.WriteLine(Archive);
+                        string[] Archive = sr.ReadLine().Split(' ');
+
+                        string name = Archive[0];
+                        DateTime instant = DateTime.Parse(Archive[1]);
+
+                        Set.Add(new LogRecord(name, instant));
 
                     }
 
+                    Console.Write("Total users: " + Set.Count);
                 }
             }
             catch(IOException e)
             {
-                Console.WriteLine("An error accurred");
                 Console.WriteLine(e.Message);
             }
 
