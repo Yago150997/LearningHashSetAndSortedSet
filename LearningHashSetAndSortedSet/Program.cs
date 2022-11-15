@@ -18,23 +18,20 @@ namespace LearningHashSetAndSortedSet
             Console.WriteLine("Enter file full path");
             string Path = Console.ReadLine();
 
-            FileStream fs = null;
-            StreamReader sr = null;
-
             try
             {
-                fs = new FileStream(Path, FileMode.Open);
-
-                sr = new StreamReader(fs);
-
-                while (!sr.EndOfStream)
+                using (StreamReader sr = File.OpenText(Path))
                 {
-                    string Archive = sr.ReadLine();
-                    Console.WriteLine(Archive);
+
+
+                    while (!sr.EndOfStream)
+                    {
+                        string Archive = sr.ReadLine();
+                        Console.WriteLine(Archive);
+
+                    }
 
                 }
-
-                
             }
             catch(IOException e)
             {
@@ -42,17 +39,6 @@ namespace LearningHashSetAndSortedSet
                 Console.WriteLine(e.Message);
             }
 
-            finally
-            {
-                if(sr != null)
-                {
-                    sr.Close();
-                }
-                if (fs != null)
-                {
-                    fs.Close();
-                }
-            }
         }
     }
 }
