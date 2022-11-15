@@ -1,6 +1,13 @@
-﻿using System;
+﻿/*Problema exemplo
+Um site de internet registra um log de acessos dos usuários. Umregistro de log consiste no nome de usuário e o instante em que ousuário acessou o site no padrão ISO 8601,
+separados por espaço, conforme exemplo. Fazer um programa que leia o log de acessos apartir de um arquivo, e daí informe quantos usuários distintosacessaram o site.
+*/
+
+
+using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
+using System.IO;
 
 namespace LearningHashSetAndSortedSet
 {
@@ -8,31 +15,44 @@ namespace LearningHashSetAndSortedSet
     {
         static void Main(string[] args)
         {
-            SortedSet<int> a = new SortedSet<int> {1, 2, 3, 4, 5, 7, 9, 11, };
-            SortedSet<int> b = new SortedSet<int> { 2, 4, 6, 8, 9, 10, 12, 13 };
+            Console.WriteLine("Enter file full path");
+            string Path = Console.ReadLine();
 
-            a.UnionWith(b); //Union
-            PrintCollection(a);
+            FileStream fs = null;
+            StreamReader sr = null;
 
-            SortedSet<int> c = new SortedSet<int>(a);
-            c.IntersectWith(b); //Intersection
-            PrintCollection(c);
-
-            SortedSet<int> d = new SortedSet<int>(a);
-            d.ExceptWith(b); //Difference
-            PrintCollection(d);
-
-
-            static void PrintCollection<T>(IEnumerable<T> Collection)
+            try
             {
-                foreach (T obj in Collection)
+                fs = new FileStream(Path, FileMode.Open);
+
+                sr = new StreamReader(fs);
+
+                while (!sr.EndOfStream)
                 {
-                    Console.Write(obj + ", ");
+                    string Archive = sr.ReadLine();
+                    Console.WriteLine(Archive);
+
                 }
 
-                Console.WriteLine();
+                
             }
-           
+            catch(IOException e)
+            {
+                Console.WriteLine("An error accurred");
+                Console.WriteLine(e.Message);
+            }
+
+            finally
+            {
+                if(sr != null)
+                {
+                    sr.Close();
+                }
+                if (fs != null)
+                {
+                    fs.Close();
+                }
+            }
         }
     }
 }
